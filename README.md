@@ -1,4 +1,4 @@
-# Labyrinth_Game 
+# Labyrinth Game 
 
 <h1>Preview</h1>
 
