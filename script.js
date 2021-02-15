@@ -9,28 +9,56 @@ var clickCount = 0;
 var fruit = document.getElementById('fruit');
 var element = document.getElementById('part');
 var miliseconds;
-var tail = [];
+
+time= 0;
+function completeTime() {
+   time++;
+   document.getElementById('youwin').innerText = "Time: " + time;
+}
+
 
     
 // Check eat fruit
 function check() {
-    
+  
     elementX = element.offsetLeft;
     elementY = element.offsetTop; 
     fruitX = fruit.offsetLeft;
     fruitY = fruit.offsetTop;
-    var tailSize = tail.length;
+  
     if(Math.abs(elementX - fruitX )<=20 && Math.abs(elementY-fruitY)<=20 ){
        
-       fruit.style.left = Math.floor(Math.random()*470 +1) + "px";
-       fruit.style.top =  Math.floor(Math.random()*470 +1) + "px";
-     
-       
-       
+        /*
+        fruit.style.left = Math.floor(Math.random()*470 +1) + "px";
+        fruit.style.top =  Math.floor(Math.random()*470 +1) + "px";
+       */
+      fruit.style.visibility = 'hidden';
+      element.style.visibility = 'hidden';
+      document.getElementById('labirent1').style.display = 'none';
+      document.getElementById('labirent2').style.display = 'none';
+      document.getElementById('labirent3').style.display = 'none';
+      document.getElementById('labirent4').style.display = 'none';
+      document.getElementById('labirent5').style.display = 'none';
+      document.getElementById('labirent6').style.display = 'none';
+      document.getElementById('labirent7').style.display = 'none';
+      document.getElementById('labirent8').style.display = 'none';
+      document.getElementById('labirent9').style.display = 'none';
+      document.getElementById('labirent10').style.display = 'none';
+      document.getElementById('labirent11').style.display = 'none';
+      document.getElementById('labirent12').style.display = 'none';
+      document.getElementById('labirent13').style.display = 'none';
+      document.getElementById('youwin').style.visibility = 'visible';
+      document.getElementById('youwin').innerText = "You win! Your score is: "+ Math.ceil((1/time) * 300) + " points";
+
+
+
     }
+
+    
 }
-
-
+if(fruit.style.visibility == 'hidden'){
+    alert("You win!! :)");
+}
 
 window.addEventListener("keydown", function (e) {
 
@@ -130,6 +158,7 @@ window.addEventListener("keydown", function (e) {
 
     //Right movement here
     if (clickedKey === 'D') {
+        setInterval(completeTime(),1000);
         clearInterval(downInterval);
         clearInterval(leftInterval);
         clearInterval(upInterval);

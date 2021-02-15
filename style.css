@@ -4,11 +4,7 @@
   
     width: 500px;
     height: 500px;
-    display: grid;
-    grid-template-columns: 21px;
-    grid-template-rows: 21px;
-    grid-gap: 0px;
-    
+   
     border: 3px solid rgb(6, 64, 255);
     overflow: hidden;
     left: 0;
@@ -49,12 +45,137 @@ height: 600px;
     height: 20px;
     margin-top: 0px;
     margin-left: 0px;
-    left: 150px;
-    top: 150px;
+    left: 450px;
+    top: 0px;
 
     border-radius: 10px;
    
 
 }
 
+#labirent1{
+    position: relative;
+    width: 178px;
+    height: 4px;
+    background-color:rgb(255, 0, 157);
+    left: 35px;
+    top: 410px;
+}
+#labirent2{
+    position: relative;
+    width: 456px;
+    height: 4px;
+    background-color:rgb(255, 0, 157);
+    left: 40px;
+    top: 449px;
+}
+#labirent3{
+    position: relative;
+    width: 90px;
+    height: 4px;
+    background-color:rgb(255, 0, 157);
+    left: 365px;
+    top: 10px;
+}
 
+#labirent4{
+    position: relative;
+    width: 4px;
+    height: 500px;
+    background-color:rgb(255, 0, 157);
+    margin-left: 496px;
+    top: -55px;
+}
+
+#labirent5{
+    position: relative;
+    width: 40px;
+    height: 4px;
+    background-color:rgb(255, 0, 157);
+    margin-left: 270px;
+    top: -80px;
+}
+#labirent6{
+    position: relative;
+    width: 348px;
+    height: 4px;
+    background-color:rgb(255, 0, 157);
+    top: -745px;
+    left: 150px;
+}
+#labirent7{
+    position: relative;
+    width: 4px;
+    height: 235px;
+    background-color:rgb(255, 0, 157);
+    margin-left: 150px;
+    top: -745px;
+}
+#labirent8{
+    position: relative;
+    width: 4px;
+    height: 430px;
+    background-color:rgb(255, 0, 157);
+    margin-left: 260px;
+    top: -980px;
+}
+
+#labirent9{
+    position: relative;
+    width: 4px;
+    height: 200px;
+    background-color:rgb(255, 0, 157);
+    margin-left: 220px;
+    top: -680px;
+}
+#labirent10{
+    position: relative;
+    width: 90px;
+    height: 4px;
+    background-color:rgb(255, 0, 157);
+    top: -1300px;
+    left: 110px;
+}
+#labirent11{
+    position: fixed;
+    width: 4px;
+    height: 380px;
+    background-color:rgb(255, 0, 157);
+    margin-left: 320px;
+    top: 48px;
+}
+#labirent12{
+    position: fixed;
+    width: 4px;
+    height: 380px;
+    background-color:rgb(255, 0, 157);
+    margin-left: 380px;
+    top: 160px;
+}
+#labirent13{
+    position: fixed;
+    width: 4px;
+    height: 430px;
+    background-color:rgb(255, 0, 157);
+    margin-left: 430px;
+    top: 48px;
+}
+#labirent13{
+    position: fixed;
+    width: 4px;
+    height: 400px;
+    background-color:rgb(255, 0, 157);
+    margin-left: 105px;
+    top: 96px;
+}
+#youwin{
+    position: fixed;
+    font-size: 20px;
+    width: 450;
+    height: 500px;
+    color: rgb(0, 238, 255);
+    left: 60px;
+    top: -10px;
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
